@@ -54,6 +54,9 @@ const checksum1 = getChecksum(individualBlocks)
 console.log(checksum1)
 
 // Part 2
+// Notes for future reference: We should've stuck to IndividualBlock[] instead of this...
+// This is a mess, with pointers moving around after each swap. It was a nightmare to debug.
+// See https://github.com/insin/adventofcode/blob/main/2024/09/index.js for a much cleaner solution.
 const contiguousBlocks: ContiguousBlock[] = []
 numbers.forEach((num, index) => {
     if (num === 0) return
