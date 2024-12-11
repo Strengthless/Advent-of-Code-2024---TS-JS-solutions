@@ -4,7 +4,7 @@ const input = readFileSync('inputs/d11.txt', 'utf-8').trim()
 const originalStones = input.split(' ').map(Number)
 
 // Part 1
-const blinks = 35
+const blinks = 25
 
 // Initialize an array for full simulation, this is O(n^2) or even O(2^n).
 let stones = originalStones
